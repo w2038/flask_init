@@ -8,7 +8,7 @@ def search():
     category = request.args.get('category')
     
     if keyword:
-        return f"Reazando uma busca po '{keyword}' na categoria '{category}'."
+        return f"Reazando uma busca por '{keyword}' na categoria '{category}'."
     else:
         return "Por favor, forneça uma palavra-chave para fazer a busca."
 
