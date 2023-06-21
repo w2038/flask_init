@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista de Usuários</title>
+    <title>Formulário</title>
 </head>
 <body>
-    <h1>Lista de Usuários</h1>
-    <ul>
-        {% for user in users %}
-            <li>{{ user.name }}, {{ user.age }}</li>
-        {% endfor %}
-    </ul>
+    <h1>Preencha o formulário:</h1>
+    <form method="POST" action="/submit">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Idade:</label>
+        <input type="text" id="age" name="age" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
+
